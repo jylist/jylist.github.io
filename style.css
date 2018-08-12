@@ -127,10 +127,17 @@ h1, h2{
     padding-top: 5rem;
     padding-bottom: 3rem;
 }
+.section-even p{
+    text-align: justify;
+}
 .section:last-child{
     -webkit-clip-path: polygon(0 1.5vw, 50% 0, 100% 1.5vw, 100% 100%, 0 100%);
     clip-path: polygon(0 1.5vw, 50% 0, 100% 1.5vw, 100% 100%, 0 100%);
     margin-bottom: 1rem;
+}
+ul{
+    margin: auto;
+    text-align: justify;
 }
 .container{
     max-width: 80%;
