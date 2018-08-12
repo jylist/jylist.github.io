@@ -40,7 +40,7 @@ h1, h2{
     padding: 0 1rem;
     background: url("logo.png");
     background-position: center;
-    background-size: contain;
+    background-size: 65%;
     background-repeat: no-repeat;
     padding: 0 2rem;
     transition: all var(--speed);
@@ -48,9 +48,9 @@ h1, h2{
     margin-bottom: -1rem;
 }
 .menu-logo:hover{
-    background: url("logo-white.png"), var(--main-color);
+    background: url("logo-all-white.png"), var(--main-color);
     background-position: center;
-    background-size: contain;
+    background-size: 65%;
     background-repeat: no-repeat;
 }
 .menu-button{
