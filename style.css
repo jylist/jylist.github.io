@@ -214,22 +214,28 @@ input[type="submit"]:hover{
     
 }
 #right-info p{
-    margin-top: 4rem;
+    margin-top: 1rem;
     font-size: 1.5rem;
     color: white;
     font-family: "Kaushan Script", cursive;
     margin-right: 5rem;
 }
 #right-info a{
-    line-height: 5rem;
+    line-height: 3rem;
     font-size: 1.5rem;
     color: white;
     text-decoration: none;
     transition: all var(--speed);
     margin-right: 5rem;
+    font-family: "Kaushan Script", cursive;
 }
 #right-info a:hover{
     color: var(--main-color);
+}
+#right-info img{
+    height: 5rem;
+    margin-right: 5rem;
+    margin-top: 2rem;
 }
 #footer{
     background: var(--main-color);
@@ -238,30 +244,37 @@ input[type="submit"]:hover{
     line-height: 3rem;
     font-size: 0.85rem;
 }
-#footer a{
-    color: var(--light-text);
+#footer img{
+    height: 1.5rem;
+    vertical-align: middle;
+    margin-left: 0.25rem;
+    transition: all var(--speed);
 }
-#footer a:hover{
-    color: var(--accent-color);
-    text-decoration: none;
+#footer img:hover{
+    height: 2rem;
+    margin-left: 0rem;
+    margin-right: -0.25rem;
 }
 @media only screen and (max-width: 680px){
     #left-info, #right-info{
         width: 100%;
         height: 50%;
     }
-    #bio-image img, #right-info a, #right-info p{
+    #bio-image img, #right-info a, #right-info p, #right-info img{
         margin: auto;
     }
     #bio-image img{
         margin-top: 2.5rem;
     }
+    #right-info img{
+        margin-top: 2rem;
+    }
     #right-info p{
-        margin-top: 3rem;
+        margin-top: 1rem;
         margin-bottom: 1rem;
     }
     #info{
-        height: 35rem;
+        height: 37.5rem;
     }
 }
 @media only screen and (max-width: 480px){
@@ -270,5 +283,8 @@ input[type="submit"]:hover{
     }
     #footer{
         font-size: 0.7rem;
+    }
+    input, textarea{
+        width: 80%;
     }
 }
