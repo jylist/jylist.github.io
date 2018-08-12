@@ -3,6 +3,7 @@
     --main-color: #444499;
     --accent-color: #4488ff;
     --light-text: #ffffff;
+    --gray: #dddddd;
 }
 body{
     margin: 0;
@@ -18,18 +19,24 @@ a{
 a:hover{
     text-decoration: underline;
 }
-h1{
+h1, h2{
     font-family: "Kaushan Script", cursive;
-    background: var(--accent-color);
-    color: var(--light-text);
-    width: 20rem;
-    margin: auto;
 }
 #header{
     width: 100%;
 }
 #menu{
-    background: var(--main-color);
+    background: white; 
+}
+.menu-logo{
+    display: inline-block;
+    height: 4rem;
+    transition: all var(--speed);
+    padding: 0 1rem;
+}
+.menu-logo img{
+    height: 4rem;
+    margin-bottom: -1.5rem;
 }
 .menu-button{
     display: inline-block;
@@ -48,26 +55,117 @@ h1{
     display: inline-block;
     text-decoration: none;
     transition: all var(--speed);
-    color: var(--light-text);
+    color: var(--main-color);
+    font-size: 1.25rem;
 }
 .menu-button:hover{
-    background: rgba(255, 255, 255, 0.1);
+    background: var(--main-color);
 }
 .menu-button a:hover{
+    color: white;
 }
 #content{
+    background: transparent;
+    min-height: 50rem;
+    margin-bottom: -1rem;
+    margin-top: -3rem;
 }
-#heading{
-    margin-top: 5rem;
+#title{
+    background: linear-gradient(rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25)), url("header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 23rem;
+    padding-top: 5rem;
+}
+#title h1{
+    color: var(--light-text);
+    text-transform: uppercase;
+    margin: auto;
     font-size: 5rem;
+    background: var(--main-color);
+    max-width: 30rem;
+    padding-right: 1.5rem;
+}
+.section h2, .section-even h2{
+    font-size: 2rem;
+}
+.section{
+    -webkit-clip-path: polygon(0 1.5vw, 50% 0, 100% 1.5vw, 100% calc(100% - 1.5vw), 50% 100%, 0 calc(100% - 1.5vw));
+    clip-path: polygon(0 1.5vw, 50% 0, 100% 1.5vw, 100% calc(100% - 1.5vw), 50% 100%, 0 calc(100% - 1.5vw));
+    background: white;
+    min-height: 10rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    margin-bottom: -3rem;
+}
+.section-even{
+    background: var(--gray);
+    min-height: 10rem;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+}
+.container{
+    max-width: 80%;
+    margin: auto;
+}
+.button{
+    background: var(--main-color);
+    max-width: 10rem;
+    margin: auto;
+    padding: 1rem 0;
+    border-radius: 0.25rem;
+    transition: all var(--speed);
+}
+.button:hover{
+    background: var(--accent-color);
+}
+.button a{
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    color: white;
+    transition: all var(--speed);
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.button a:hover{
+    text-decoration: none;
+}
+input, textarea{
+    border: none;
+    background: var(--gray);
+    resize: none;
+    width: 50%;
+    min-height: 2rem;
+    margin-bottom: 1rem;
+    outline: none;
+    padding: 2px;
+    padding-left: 1rem;
+    line-height: 1.5rem;
+    font-size: 1.5rem;
+}
+textarea{
+    margin-left: 4px;
+}
+input[type="submit"]{
+    width: 10rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+    padding-left: 2px;
+    cursor: pointer;
+    transition: all var(--speed);
+}
+input[type="submit"]:hover{
+    color: white;
+    background: var(--main-color);
 }
 #footer{
     background: var(--main-color);
     color: var(--light-text);
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    height: 3rem;
+    line-height: 3rem;
+    font-size: 0.85rem;
 }
 #footer a{
     color: var(--light-text);

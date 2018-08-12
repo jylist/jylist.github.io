@@ -34,19 +34,20 @@
             </div>
         </div>
         <div id="title">
-            <h1 id="heading">Welcome</h1>
+            <h1 id="heading">Contact</h1>
         </div>
         <div id="content">
             <div class="section">
                 <div class="container">
-                    <h2>Welcome to my personal website!</h2>
-                    <p>Here you'll find all relevant information about me - Julia List!</p>
-                </div>
-            </div>
-            <div class="section-even">
-                <div class="container">
-                    <h2>About Me</h2>
-                    <p>I am a fifth-year biomedical engineering student at California Polytechnic State University. I have wanted to help people by developing medical technologies ever since I was little after my mother was diagnosed with Parkinson's. I enjoy reading and playing The Sims in my free time. This site is currently under construction, but feel free to continue checking back as it updates!</p>
+                    <h2>Feel free to use the form below to contact me!</h2>
+                    <form action="https://formspree.io/jlist@calpoly.edu" method="POST">
+                        <input type="text" name="first-name" placeholder="First Name"><br>
+                        <input type="text" name="last-name" placeholder="Last Name">
+                        <input type="text" name="email" placeholder="Email">
+                        <textarea name="message" cols="50" rows="8" placeholder="Message"></textarea>
+                        <br>
+                        <input type="submit" value="Submit">
+                    </form>
                 </div>
             </div>
         </div>
