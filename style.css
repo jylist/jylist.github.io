@@ -82,7 +82,6 @@ h1, h2{
 }
 #content{
     background: transparent;
-    min-height: 50rem;
     margin-bottom: -1rem;
     margin-top: -3rem;
 }
@@ -119,19 +118,19 @@ h1, h2{
     -webkit-clip-path: polygon(0 1.5vw, 50% 0, 100% 1.5vw, 100% calc(100% - 1.5vw), 50% 100%, 0 calc(100% - 1.5vw));
     clip-path: polygon(0 1.5vw, 50% 0, 100% 1.5vw, 100% calc(100% - 1.5vw), 50% 100%, 0 calc(100% - 1.5vw));
     background: white;
-    min-height: 10rem;
     padding-top: 3rem;
     padding-bottom: 3rem;
     margin-bottom: -3rem;
 }
 .section-even{
     background: var(--gray);
-    min-height: 10rem;
     padding-top: 5rem;
     padding-bottom: 3rem;
 }
-.section:last-child, .section-even:last-child{
-    min-height: 30rem;
+.section:last-child{
+    -webkit-clip-path: polygon(0 1.5vw, 50% 0, 100% 1.5vw, 100% 100%, 0 100%);
+    clip-path: polygon(0 1.5vw, 50% 0, 100% 1.5vw, 100% 100%, 0 100%);
+    margin-bottom: 1rem;
 }
 .container{
     max-width: 80%;
