@@ -3,7 +3,9 @@
     --main-color: #444499;
     --accent-color: #4488ff;
     --light-text: #ffffff;
-    --gray: #dddddd;
+    --gray: #eeeeee;
+    --angle: 120deg;
+    --bar-width: 60px;
 }
 body{
     margin: 0;
@@ -37,6 +39,12 @@ h1, h2{
 .menu-logo img{
     height: 4rem;
     margin-bottom: -1.5rem;
+    transition: all var(--speed);
+}
+.menu-logo img:hover{
+    height: 4.5rem;
+    margin-bottom: -2rem;
+    margin-right: -0.8rem;
 }
 .menu-button{
     display: inline-block;
@@ -104,6 +112,9 @@ h1, h2{
     min-height: 10rem;
     padding-top: 5rem;
     padding-bottom: 3rem;
+}
+.section:last-child, .section-even:last-child{
+    min-height: 30rem;
 }
 .container{
     max-width: 80%;
