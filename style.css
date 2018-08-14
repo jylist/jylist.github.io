@@ -87,6 +87,7 @@ h1, h2{
 }
 #title{
     background: linear-gradient(rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25)), url("header.jpg");
+    background: url("gif.gif");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -97,6 +98,7 @@ h1, h2{
     max-width: 30rem;
     margin: auto;
     background: rgba(255, 255, 255, 0.8);
+    background: transparent;
 }
 #title h1{
     color: var(--light-text);
@@ -104,7 +106,7 @@ h1, h2{
     margin: auto;
     font-size: 5rem;
     padding-right: 1.5rem;
-    background: -webkit-linear-gradient(var(--accent-color), var(--main-color));
+    background: -webkit-linear-gradient(var(--light-text), var(--dark-text));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
