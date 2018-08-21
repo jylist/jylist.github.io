@@ -68,7 +68,7 @@
         margin: auto;
         font-size: 5rem;
         padding-right: 1.5rem;
-        background: -webkit-linear-gradient($light-text, $dark-text);
+        background: -webkit-linear-gradient($light-text 50%, $dark-text);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         @include bp-small{

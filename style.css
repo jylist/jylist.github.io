@@ -80,7 +80,7 @@ h1, h2 {
     margin: auto;
     font-size: 5rem;
     padding-right: 1.5rem;
-    background: -webkit-linear-gradient(#ffffff, #202020);
+    background: -webkit-linear-gradient(#ffffff 50%, #202020);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; }
     @media only screen and (max-width: 480px) {
