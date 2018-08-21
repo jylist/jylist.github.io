@@ -1,0 +1,55 @@
+.button{
+    background: $main-color;
+    max-width: 10rem;
+    margin: auto;
+    border-radius: 0.25rem;
+    @extend %transition;
+    &:hover{
+        background: $accent-color;
+    }
+    a{
+        height: 100%;
+        width: 100%;
+        display: inline-block;
+        color: white;
+        @extend %transition;
+        cursor: pointer;
+        text-transform: uppercase;
+        line-height: 3rem;
+        &:hover{
+            text-decoration: none;
+        }
+    }
+}
+input, textarea{
+    border: none;
+    background: $gray;
+    resize: none;
+    width: 50%;
+    min-height: 2rem;
+    margin-bottom: 1rem;
+    outline: none;
+    padding: 2px{
+        left: 1rem;
+    }
+    line-height: 1.5rem;
+    font-size: 1.5rem;
+    @include bp-small{
+        width: 80%;
+    }
+}
+textarea{
+    margin-left: 4px;
+}
+input[type="submit"]{
+    width: 10rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+    padding-left: 2px;
+    cursor: pointer;
+    @extend %transition;
+    &:hover{
+        color: white;
+        background: $main-color;
+    }
+}
